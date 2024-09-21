@@ -5,7 +5,7 @@ const router = express.Router();
 const auth = require('./../../middleware/auth')
 
 router.get('/get', (req,res) => {
-    res.send('Hello backend')
+    res.send('Hello backend testing')
 })
 
 router.get("/private_data", auth, (req, res)=> {
